@@ -57,11 +57,6 @@ class Graph(PanelsItemBase):
                 'rightMax': grid_data.get('rightMax', None),
                 'leftMin': grid_data.get('leftMin', None),
                 'rightMin': grid_data.get('rightMin', None)
-                #,
-                # 'threshold1': grid_data.get('threshold1', None),
-                # 'threshold2': grid_data.get('threshold2', None),
-                # 'threshold1Color': grid_data.get('threshold1Color', 'rgba(216, 200, 27, 0.27)'),
-                # 'threshold2Color': grid_data.get('threshold2Color', 'rgba(234, 112, 112, 0.22)')
             }
         if 'legend' in self.data:
             panel_json['legend'] = {
