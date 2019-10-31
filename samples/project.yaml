@@ -151,6 +151,19 @@
           - absolute-link:
               title: link title
               url: https://github.com
+        thresholds:
+          - value: 2
+            op: gt
+            fill: true
+            colorMode: ok
+          - value: 4
+            op: gt
+            fill: true
+            colorMode: warning
+          - value: 6
+            op: gt
+            fill: true
+            colorMode: critical
 
 - name: template
   templates:

@@ -7,12 +7,28 @@
     "leftMax": 2,
     "leftMin": 1,
     "rightMax": 4,
-    "rightMin": 3,
-    "threshold1": 1,
-    "threshold2": 3,
-    "threshold1Color": "rgba(216, 200, 27, 0.27)",
-    "threshold2Color": "rgba(234, 112, 112, 0.22)"
+    "rightMin": 3
   },
+  "thresholds": [
+    {
+      "value": 2,
+      "op": "lt",
+      "colorMode": "ok",
+      "fill": true
+    },
+    {
+      "value": 4,
+      "op": "lt",
+      "colorMode": "warning",
+      "fill": false
+    },
+    {
+      "value": 6,
+      "op": "gt",
+      "colorMode": "critical",
+      "fill": true
+    }
+  ],
   "y_formats": [
     "bytes",
     "short"

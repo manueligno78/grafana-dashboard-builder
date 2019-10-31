@@ -13,8 +13,19 @@ graph:
     leftMax: 2
     rightMin: 3
     rightMax: 4
-    threshold1: 1
-    threshold2: 3
+  thresholds:
+    - value: 2
+      op: lt
+      fill: true
+      colorMode: ok
+    - value: 4
+      op: lt
+      fill: false
+      colorMode: warning
+    - value: 6
+      op: gt
+      fill: true
+      colorMode: critical
   y_formats: [bytes, short]
   nullPointMode: 'connected'
   stack: true
