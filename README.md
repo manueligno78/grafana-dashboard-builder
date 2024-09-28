@@ -1,6 +1,6 @@
 # grafana-dashboard-builder
 
-[![PyPI version](https://badge.fury.io/py/grafana-dashboard-builder.svg)](http://badge.fury.io/py/grafana-dashboard-builder) [![Build Status](https://travis-ci.org/jakubplichta/grafana-dashboard-builder.svg?branch=master)](https://travis-ci.org/jakubplichta/grafana-dashboard-builder) [![Coverage Status](https://coveralls.io/repos/jakubplichta/grafana-dashboard-builder/badge.svg?branch=master)](https://coveralls.io/r/jakubplichta/grafana-dashboard-builder?branch=master)
+[![PyPI version](https://badge.fury.io/py/grafana-dashboard-builder.svg)](http://badge.fury.io/py/grafana-dashboard-builder) [![Build Status](https://github.com/jakubplichta/grafana-dashboard-builder/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/jakubplichta/grafana-dashboard-builder/actions/workflows/build.yml?query=branch%3Amaster) [![Coverage Status](https://coveralls.io/repos/jakubplichta/grafana-dashboard-builder/badge.svg?branch=master)](https://coveralls.io/r/jakubplichta/grafana-dashboard-builder?branch=master)
 
 ## Introduction
 
@@ -18,11 +18,17 @@ templates filled with different configuration.
 To install:
 
 ```
-sudo pip install grafana-dashboard-builder
+pip install grafana-dashboard-builder
 ```
 or
 ```
-sudo python setup.py install
+python setup.py install
+```
+
+An alternative to installing it into the global site-packages is to add it to [your user local directory](https://docs.python.org/3/install/index.html#alternate-installation-the-user-scheme) (usually ~/.local).
+
+```
+pip install --user grafana-dashboard-builder
 ```
 
 ## Usage

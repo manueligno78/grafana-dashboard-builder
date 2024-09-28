@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright 2015-2019 grafana-dashboard-builder contributors
+# Copyright 2015-2020 grafana-dashboard-builder contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -49,7 +49,7 @@ class Tox(TestCommand):
 
 params = {
     'name': 'grafana-dashboard-builder',
-    'version': '0.5.0a2',
+    'version': '0.8.1a1',
     'packages': [
         'grafana_dashboards',
         'grafana_dashboards.client',
@@ -72,18 +72,18 @@ params = {
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
     'keywords': 'grafana yaml graphite prometheus influxdb',
     'cmdclass': {'test': Tox},
     'tests_require': ['tox', 'mock'],
-    'install_requires': ['PyYAML', 'argparse', 'requests-kerberos', 'requests'],
+    'install_requires': ['PyYAML>=5.3', 'argparse', 'requests-kerberos', 'requests'],
+    'python_requires': '>=3.6',
     'entry_points': {
         'console_scripts': [
             'grafana-dashboard-builder = grafana_dashboards.cli:main',
